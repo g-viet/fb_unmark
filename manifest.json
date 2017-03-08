@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "The first Chrome Extension",
+  "description": "Ahihihi",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Click here!"
+  },
+  "background": {
+    "scripts": ["block.js"]
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://*.facebook.com/*",
+    "*://*.messenger.com/*"
+  ]
+}
