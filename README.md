@@ -4,7 +4,7 @@ Deny all requests from facebook.com or messenger.com, that
  - Mark notifications seen.
  - Mark messages read.
  - Mark friend requests status seen.
- - Last active.
+ - Update last active.
  - Mark read status.
 
 # How to Use:
