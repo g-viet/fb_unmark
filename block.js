@@ -6,7 +6,8 @@ chrome.webRequest.onBeforeRequest.addListener(
       details.url.includes("ajax/gigaboxx/endpoint/UpdateLastSeenTime") ||
       details.url.includes("reconnect") ||
       details.url.includes("friendjewel/friendconfirmednotifications") ||
-      details.url.includes("active_ping")
+      details.url.includes("active_ping") ||
+      details.url.includes("mercury/change_read_status.php")
       )
     {
       console.log("So in");
