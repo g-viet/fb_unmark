@@ -9,6 +9,11 @@ chrome.webRequest.onBeforeRequest.addListener(
       details.url.includes("mercury/change_read_status.php")
       )
     {
+      var a;
+      chrome.storage.local.get(["offline"], function(items){
+        a = items;
+      });
+      console.log(a);
       return {cancel: true}
     } else if (details.url.includes(".com/pull")) {
       var replaceUrl = details.url.replace(/active/i, 'offline');

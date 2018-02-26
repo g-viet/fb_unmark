@@ -3,15 +3,17 @@
   "name": "FB Unmark",
   "description": "FB Unmark",
   "version": "1.0",
-
+  // "options_page": "options.html",
   "browser_action": {
-    "default_icon": "icon.jpg",
-    "default_title": "Click to enable FB unmark feature!"
+    "default_icon": "icon.png",
+    "default_title": "Configure FB unmark features",
+    "default_popup": "popup.html"
   },
   "background": {
     "scripts": ["block.js"]
   },
   "permissions": [
+    "storage",
     "webRequest",
     "webRequestBlocking",
     "*://*.facebook.com/*",
