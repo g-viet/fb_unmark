@@ -1,6 +1,5 @@
 chrome.webRequest.onBeforeRequest.addListener(
   function (details) {
-    console.log("IN");
     if(details.url.includes("ajax/mercury/mark_seen") ||
       details.url.includes("ajax/notifications/mark_read") ||
       details.url.includes("ajax/gigaboxx/endpoint/UpdateLastSeenTime") ||
@@ -10,7 +9,6 @@ chrome.webRequest.onBeforeRequest.addListener(
       details.url.includes("mercury/change_read_status.php")
       )
     {
-      console.log("So in");
       return {cancel: true}
     } else if (details.url.includes(".com/pull")) {
       var replaceUrl = details.url.replace(/active/i, 'offline');
