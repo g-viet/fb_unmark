@@ -1,6 +1,6 @@
 # fb_unmark
 
-Making people in facebook do not know you are online.
+A Chrome Extension: Let you be offline, unseen message, unmark notification while using Facebook & Messenger
 
 Deny all requests from facebook.com or messenger.com, that
  - Mark notifications seen.
